@@ -1,0 +1,61 @@
+import "./Navbar.css";
+
+export default function Navbar() {
+  return (
+    <nav className="navbar navbar-expand-md navbar-dark navbar-overlay py-5 text-white">
+      <div className="container position-relative d-flex justify-content-between align-items-center">
+        {/* LIJEVA STRANA */}
+        <ul className="navbar-nav d-lg-flex d-none align-items-center nav-left custom-gap">
+          <li className="nav-item">
+            <a className="nav-link" href="#">NASLOVNA</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">O NAMA</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">USLUGE</a>
+          </li>
+        </ul>
+
+        {/* LOGO */}
+        <a className="navbar-brand position-absolute top-50 start-50 translate-middle" href="#">
+          <img src="/DV-materijali/digital_normalnno-01.png" alt="Logo" height="160" />
+        </a>
+
+        {/* DESNA STRANA */}
+        <ul className="navbar-nav d-lg-flex d-none align-items-center nav-right custom-gap">
+          <li className="nav-item">
+            <a className="nav-link" href="#">PROJEKTI</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">KONTAKT</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">BLOG</a>
+          </li>
+        </ul>
+
+        {/* HAMBURGER ZA MOB */}
+        <button
+          className="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div className="collapse d-lg-none bg-dark w-100" id="mobileMenu">
+        <ul className="navbar-nav d-flex ms-auto flex-column text-center p-3 gap-3">
+          <li className="nav-item"><a className="nav-link text-white" href="#">NASLOVNA</a></li>
+          <li className="nav-item"><a className="nav-link text-white" href="#">O NAMA</a></li>
+          <li className="nav-item"><a className="nav-link text-white" href="#">USLUGE</a></li>
+          <li className="nav-item"><a className="nav-link text-white" href="#">PROJEKTI</a></li>
+          <li className="nav-item"><a className="nav-link text-white" href="#">KONTAKT</a></li>
+          <li className="nav-item"><a className="nav-link text-white" href="#">BLOG</a></li>
+        </ul>
+      </div>
+    </nav>
+  );
+}

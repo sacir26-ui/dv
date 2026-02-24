@@ -1,42 +1,458 @@
-.App {
+
+
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 25% 35%, rgba(255,255,255,0.12), transparent 55%),
+    radial-gradient(circle at 70% 70%, rgba(255,255,255,0.10), transparent 60%),
+    linear-gradient(135deg, rgba(55, 25, 110, 0.35), rgba(190, 130, 200, 0.35));
+  z-index: 2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.h1-p {
+  margin-bottom: 14px;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.hero-content h1 {
+  font-weight: 500;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero-button {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #fff;
+  color: #222;
+  border-radius: 999px;
+  font-size: 13px;
+  padding: 14px 34px;
+  text-decoration: none;
+  margin-top: 30px;
+  transition: transform 0.2s ease;
 }
 
-
-
-
-
-.App-link {
-  color: #61dafb;
+.hero-button:hover {
+  transform: translateY(-3px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* =========================
+   NASLOVNA
+========================= */
+.naslovna {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.naslovna h2 {
+  font-weight: 700;
+}
+
+.podnaslov {
+  margin: 18px auto 70px;
+  max-width: 920px;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #747272;
+  word-spacing: 2px;
+}
+
+.naslovna .slicice img {
+  width: 110px;
+  height: auto;
+  margin: 12px auto;
+  display: block;
+}
+
+.naslovna .slicice p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #4d4c4c;
+  letter-spacing: 0.6px;
+}
+
+/* =========================
+   LINK "KAKO RADIMO"
+========================= */
+.kako-radimo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 35px;
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+}
+
+.kako-radimo::after {
+  content: "→";
+  transition: transform 0.2s ease;
+}
+
+.kako-radimo:hover::after {
+  transform: translateX(4px);
+}
+
+/* =========================
+   CREATIVE SECTION
+========================= */
+.creative-section {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.purple-box {
+  background: linear-gradient(135deg, #8e6bbd, #b07ad9);
+  color: #fff;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  z-index: 2;
+}
+
+.purple-box h2 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 38px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.video-box {
+  width: 60%;
+  margin-top: 120px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.lead-text {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  max-width: 570px;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background: #8e6bbd;
+  margin: 22px 0;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  letter-spacing: 0.6px;
+  font-size: 15px;
+  color: #444;
+}
+
+.service-list span {
+  color: #8e6bbd;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 18px 40px;
+  background: linear-gradient(135deg, #8e6bbd, #b07ad9);
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  transition: transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .video-box {
+    width: 100%;
+    margin-top: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .purple-box {
+    position: relative;
+    width: 100%;
+  }
+}
+
+/* =========================
+   WEB SECTION
+========================= */
+.web-section {
+  padding: 70px 0 80px;
+  background: #fff;
+}
+
+.web-quote {
+  max-width: 900px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.web-quote p {
+  margin: 0;
+  font-style: italic;
+  color: #6b6b6b;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.web-quote-line {
+  display: block;
+  width: 140px;
+  height: 2px;
+  background: rgba(142, 107, 189, 0.7);
+  margin: 12px auto;
+}
+
+.web-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.web-left {
+  max-width: 520px;
+}
+
+.web-paragraph {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #444;
+}
+
+.web-divider {
+  width: 55px;
+  height: 2px;
+  background: rgba(142, 107, 189, 0.7);
+  margin: 18px 0;
+}
+
+.web-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+}
+
+.web-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.web-list li span {
+  font-size: 15px;
+  letter-spacing: 0.8px;
+  color: #444;
+}
+
+.web-list li strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(142, 107, 189, 1);
+  line-height: 1;
+}
+
+.web-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 27px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  color: #fff;
+  background: linear-gradient(135deg, #8e6bbd, #b07ad9);
+  box-shadow: 0 10px 24px rgba(142, 107, 189, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.web-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(142, 107, 189, 0.28);
+}
+
+.web-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.web-title-box {
+  width: 80%;
+  background: linear-gradient(135deg, #8e6bbd, #b07ad9);
+  padding: 40px;
+  margin-bottom: 18px;
+}
+
+.web-title-box h2 {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.web-mockup {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin-left: auto;
+  filter: drop-shadow(0 18px 30px rgba(0,0,0,0.18));
+}
+
+.web-laptop {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.web-phone {
+  position: absolute;
+  left: 6%;
+  bottom: 7%;
+  width: 18.5%;
+  height: 54%;
+  border-radius: 18px;
+  overflow: hidden;
+  z-index: 2;
+  background: #000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.web-phone-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.web-bottom {
+  margin-top: 38px;
+  text-align: center;
+}
+
+.web-bottom-line {
+  width: 140px;
+  height: 2px;
+  background: rgba(142, 107, 189, 0.7);
+  margin: 0 auto 14px;
+}
+
+.web-bottom p {
+  margin: 0;
+  font-style: italic;
+  color: #6b6b6b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+@media (max-width: 992px) {
+  .web-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .web-right {
+    align-items: flex-start;
+  }
+
+  .web-mockup {
+    max-width: 520px;
+    margin-left: 0;
+  }
+
+  .web-phone {
+    left: 7%;
+    bottom: 7%;
+    width: 19%;
+    height: 55%;
+  }
+}
+
+@media (max-width: 576px) {
+  .web-mockup {
+    max-width: 420px;
+  }
+
+  .web-phone {
+    left: 7.5%;
+    bottom: 6.5%;
+    width: 20%;
+    height: 56%;
+    border-radius: 14px;
   }
 }

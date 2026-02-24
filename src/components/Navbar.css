@@ -1,0 +1,19 @@
+
+
+.custom-gap {
+  gap: 7rem;
+}
+
+.navbar-overlay {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  z-index: 10;
+  background: transparent;
+}
+
+.navbar-nav {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
