@@ -84,14 +84,14 @@ function App() {
             </div>
 
             <div className="col-md-4">
-              <div className="3slicice">
+              <div className="slicice">
                 <img src="/DV-materijali/2.png" alt="SNN" />
                 <p>SURADNJA, NE<br />NARUDŽBA</p>
               </div>
             </div>
 
             <div className="col-md-4">
-              <div className="3slicice">
+              <div className="slicice">
                 <img src="/DV-materijali/3.png" alt="KIK" />
                 <p>KVALITETA<br />ISPRED KOLIČINE</p>
               </div>
@@ -100,10 +100,9 @@ function App() {
         </div>
       </section>
 
-      {/* KAKO RADIMO LINK */}
-      <a href="#kako-radimo" className="kako-radimo">
-        Kako radimo
-      </a>
+     <div className="container">
+  <a href="#kako-radimo" className="kako-radimo">Kako radimo</a>
+</div>
 
       {/* CREATIVE SECTION */}
       <section className="creative-section" id="kako-radimo">
@@ -146,61 +145,154 @@ function App() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="dv-footer video-footer text-white">
-        {/* VIDEO BACKGROUND */}
-        <video autoPlay muted loop playsInline className="footer-video">
+{/* WEB I DIGITALNI SUSTAVI SECTION */}
+<section className="web-section" id="web">
+  <div className="container">
+
+    {/* Gornji citat */}
+    <div className="web-quote">
+      <span className="web-quote-line"></span>
+      <p>
+        Kada su strategija, sadržaj i vizualni smjer jasno definirani,<br />
+        web postaje logičan sljedeći korak — alat koji sve to povezuje<br />
+        u funkcionalnu i održivu cjelinu.
+      </p>
+      <span className="web-quote-line"></span>
+    </div>
+
+    {/* Glavni sadržaj */}
+    <div className="web-grid">
+
+      {/* Lijevo */}
+      <div className="web-left">
+        <p className="web-paragraph">
+          Web nije samo vizitka. To je sustav koji povezuje strategiju,
+          sadržaj i korisničko iskustvo u alat koji radi dugoročno.
+          Zato web projekte gradimo kao nastavak strateškog i kreativnog rada —
+          kada postoji jasan smjer, sadržaj i cilj.
+        </p>
+
+        <div className="web-divider"></div>
+
+        <ul className="web-list">
+          <li>
+            <span>UX/UI DIZAJN I STRUKTURA SADRŽAJA</span>
+            <strong>+</strong>
+          </li>
+          <li>
+            <span>IZRADA WEB STRANICA</span>
+            <strong>+</strong>
+          </li>
+          <li>
+            <span>LANDING STRANICE I KONVERZIJE</span>
+            <strong>+</strong>
+          </li>
+          <li>
+            <span>TEHNIČKI SEO & ODRŽIVOST</span>
+            <strong>+</strong>
+          </li>
+        </ul>
+
+        <a className="web-btn" href="#kontakt">
+          JE LI TVOJ PROJEKT SPREMAN ZA WEB?
+        </a>
+      </div>
+
+     {/* DESNO */}
+<div className="web-right">
+  <div className="web-title-box">
+    <h2>WEB I DIGITALNI<br />SUSTAVI</h2>
+  </div>
+
+ <div className="web-mockup">
+  <img className="web-laptop" src="/DV-materijali/slika-lap-top.png" alt="Laptop mockup" />
+
+  <div className="web-phone">
+    <video className="web-phone-video" autoPlay muted loop playsInline preload="auto">
+      <source src="/DV-materijali/mobitel-video.mp4" type="video/mp4" />
+    </video>
+  </div>
+</div>
+</div>
+
+    </div>
+
+    {/* Donji citat */}
+    <div className="web-bottom">
+      <div className="web-bottom-line"></div>
+      <p>
+        Web projekte radimo selektivno i najčešće u sklopu dugoročnih<br />
+        suradnji ili kao nastavak strateškog i kreativnog procesa.<br />
+        Na taj način osiguravamo kvalitetu, fokus i rješenja koja imaju<br />
+        stvarnu vrijednost.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+      {/* NEW FOOTER (video + glass overlay) */}
+      <section className="video-footer">
+        <video className="footer-video" autoPlay loop muted playsInline>
+          {/* promijeni putanju ako želiš koristiti drugi video */}
           <source src="/DV-materijali/video-za-hero.mp4" type="video/mp4" />
         </video>
 
-        {/* CONTENT */}
-        <div className="container footer-content py-5">
-          <div className="row gy-4">
+        <div className="footer-overlay">
+          <footer className="footer-content">
+            <div className="footer-inner">
+              <div className="footer-grid">
 
-            {/* MENU */}
-            <div className="col-md-4">
-              <h6 className="footer-title">MENU</h6>
-              <ul className="footer-list footer-body">
-                <li><a href="#">O NAMA</a></li>
-                <li><a href="#">USLUGE</a></li>
-                <li><a href="#">PROJEKTI</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">KONTAKT</a></li>
-              </ul>
+                {/* MENU */}
+                <div className="footer-col">
+                  <div className="footer-title">MENU</div>
+                  <ul className="footer-links">
+                    <li><a href="#">O NAMA</a></li>
+                    <li><a href="#">USLUGE</a></li>
+                    <li><a href="#">PROJEKTI</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">KONTAKT</a></li>
+                  </ul>
+                </div>
+
+                {/* KONTAKT */}
+                <div className="footer-col">
+                  <div className="footer-title">KONTAKT</div>
+                  <div className="footer-text">
+                    Ulica Vladimira Filakovca 7<br />
+                    10000 Zagreb<br /><br />
+                    <a className="footer-link" href="tel:+3857287271">+385 728 7271</a><br />
+                    <a className="footer-link" href="mailto:dvivkov.mcc@gmail.com">dvivkov.mcc@gmail.com</a>
+                  </div>
+                </div>
+
+                {/* CTA */}
+                <div className="footer-col footer-cta">
+                  <div className="footer-title">IZABERITE NAS ZA</div>
+                  <ul className="footer-bullets">
+                    <li>Vođenje društvenih mreža</li>
+                    <li>Izradu web stranice</li>
+                    <li>Branding i kreativne strategije</li>
+                    <li>Dugoročnu suradnju</li>
+                  </ul>
+
+                  <a className="footer-btn" href="#">
+                    KONTAKTIRAJ NAS
+                  </a>
+                </div>
+
+              </div>
+
+              <div className="footer-bottom">
+                <span>© {new Date().getFullYear()} Digital Value</span>
+              </div>
             </div>
-
-            {/* KONTAKT */}
-            <div className="col-md-4">
-              <h6 className="footer-title">KONTAKT</h6>
-              <p className="footer-body">
-                Ulica Vladimira Filakovca 7<br />
-                10000 Zagreb<br /><br />
-                +385 728 7271<br />
-                dvivkov.mcc@gmail.com
-              </p>
-            </div>
-
-            {/* CTA */}
-            <div className="col-md-4">
-              <h6 className="footer-title">IZABERITE NAS ZA</h6>
-              <p className="footer-body">
-                Vođenje društvenih mreža<br />
-                Izradu web stranice<br />
-                Branding i kreativne strategije<br />
-                Dugoročnu suradnju
-              </p>
-
-              <a href="#" className="btn footer-btn mt-3">
-                KONTAKTIRAJ NAS
-              </a>
-            </div>
-
-          </div>
+          </footer>
         </div>
-      </footer>
+      </section>
     </>
   );
 }
 
 export default App;
-
