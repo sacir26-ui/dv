@@ -1,22 +1,23 @@
 import "./App.css";
 
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Naslovna from "./components/Naslovna";
-import KakoRadimoLink from "./components/KakoRadimoLink";
-import CreativeSection from "./components/CreativeSection";
-import WebSection from "./components/WebSection";
 import VideoFooter from "./components/VideoFooter";
+
+import Home from "./pages/Home";
+import Onama from "./pages/Onama";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Naslovna />
-      <KakoRadimoLink />
-      <CreativeSection />
-      <WebSection />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/o-nama" element={<Onama />} />
+      </Routes>
+
       <VideoFooter />
     </>
   );
