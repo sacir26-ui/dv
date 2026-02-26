@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 export default function CreativeSection() {
   return (
     <section className="creative-section" id="kako-radimo">
@@ -26,6 +27,7 @@ export default function CreativeSection() {
             <div className="line"></div>
 
             <ul className="service-list">
+              
               <li>BRANDING I VIZUALNI IDENTITET <span>+</span></li>
               <li>KREATIVNI KONCEPTI I SADRŽAJ <span>+</span></li>
               <li>DRUŠTVENE MREŽE I EDUKACIJA <span>+</span></li>

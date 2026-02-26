@@ -1,5 +1,5 @@
 import "./Navbar.css";
-
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark navbar-overlay py-5 text-white">
@@ -7,10 +7,14 @@ export default function Navbar() {
         {/* LIJEVA STRANA */}
         <ul className="navbar-nav d-lg-flex d-none align-items-center nav-left custom-gap">
           <li className="nav-item">
-            <a className="nav-link" href="#">NASLOVNA</a>
+            <NavLink className="nav-link" to="/">
+            NASLOVNA
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">O NAMA</a>
+            <NavLink to="/o-nama" className="nav-link text-white">
+              O NAMA
+            </NavLink>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">USLUGE</a>
