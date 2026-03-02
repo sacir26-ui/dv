@@ -1,5 +1,6 @@
-import "./Onama.css";
 import { NavLink } from "react-router-dom";
+import "./Onama.css";
+
 
 export default function Onama() {
   return (
@@ -59,35 +60,44 @@ export default function Onama() {
       </section>
 
       {/* NAŠ PRISTUP */}
-      <section className="onama-section onama-approach">
-        <div className="onama-container onama-twoCol">
-          <div className="onama-boxTitle">
-            <h3>NAŠ PRISTUP</h3>
-          </div>
+<section className="onama-section">
+  <div className="onama-container onama-approachGrid">
+    
+    {/* lijevo: badge + video box */}
+    <div className="onama-approachMedia">
+      <div className="onama-approachBadge">NAŠ PRISTUP</div>
 
-          <div className="onama-approachContent">
-            <p className="onama-text">
-              Digital Value pristup temelji se na tri povezana elementa:
-            </p>
+      <div className="onama-videoBox">
+        <video
+          className="onama-videoMedia"
+          src="/DV-materijali/onama-vid.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      </div>
+    </div>
 
-            <ul className="onama-bullets">
-              <li>
-                <strong>Strategija</strong> — razumijevanje ciljeva, pozicioniranja i smjera
-              </li>
-              <li>
-                <strong>Kreativa</strong> — vizualni i sadržajni izraz koji ima smisla
-              </li>
-              <li>
-                <strong>Web</strong> — tehnička izvedba koja sve povezuje u funkcionalan sustav
-              </li>
-            </ul>
+    {/* desno: tekst */}
+    <div className="onama-approachText">
+      <p className="onama-approachLead">
+        Digital Value pristup temelji se na tri povezana elementa:
+      </p>
 
-            <p className="onama-text">
-              Ovi elementi ne funkcioniraju odvojeno, već zajedno čine osnovu svakog projekta.
-            </p>
-          </div>
-        </div>
-      </section>
+      <ul className="onama-approachList">
+        <li><strong>Strategija</strong> – razumijevanje ciljeva, pozicioniranja i smjera</li>
+        <li><strong>Kreativa</strong> – vizualni i sadržajni izraz koji ima smisla</li>
+        <li><strong>Web</strong> – tehnička izvedba koja sve povezuje u funkcionalan sustav</li>
+      </ul>
+
+      <p className="onama-approachFoot">
+        Ovi elementi ne funkcioniraju odvojeno, već zajedno čine osnovu svakog projekta.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       {/* ZAŠTO DIGITAL VALUE */}
       <section className="onama-section onama-why">

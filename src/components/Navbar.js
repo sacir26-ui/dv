@@ -17,8 +17,8 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">USLUGE</a>
-          </li>
+       <NavLink className="nav-link" to="/usluge">USLUGE</NavLink>
+        </li>
         </ul>
 
         {/* LOGO */}

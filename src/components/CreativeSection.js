@@ -28,7 +28,12 @@ export default function CreativeSection() {
 
             <ul className="service-list">
               
-              <li>BRANDING I VIZUALNI IDENTITET <span>+</span></li>
+              <li>
+                <NavLink to="/usluge/branding" className="service-row-link">
+                  <span className="service-text">BRANDING I VIZUALNI IDENTITET</span>
+                  <span className="service-plus">+</span>
+                </NavLink>
+              </li>
               <li>KREATIVNI KONCEPTI I SADRŽAJ <span>+</span></li>
               <li>DRUŠTVENE MREŽE I EDUKACIJA <span>+</span></li>
               <li>FOTOGRAFIJA & VIDEO <span>+</span></li>

@@ -1,7 +1,7 @@
 import "./App.css";
-
+import Usluge from "./pages/Usluge";
 import { Routes, Route } from "react-router-dom";
-
+import Branding from       "./pages/Branding";
 import Navbar from         "./components/Navbar";
 import VideoFooter from    "./components/VideoFooter";
 import ScrollToTop from    "./components/ScrollToTop";
@@ -15,7 +15,8 @@ function App() {
       <Navbar />
 
       <Routes>
-      
+        <Route path="/usluge" element={<Usluge />} />
+        <Route path="/usluge/branding" element={<Branding />} />  
         <Route path="/" element={<Home />} />
         <Route path="/o-nama" element={<Onama />} />
         
