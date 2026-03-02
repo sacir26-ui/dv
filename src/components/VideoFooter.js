@@ -28,10 +28,10 @@ export default function VideoFooter() {
               <div className="footer-col">
                 <div className="footer-title">KONTAKT</div>
                 <div className="footer-text">
-                  Ulica Vladimira Filakovca 7<br />
+                  Lukoranska Ulica 17<br />
                   10000 Zagreb<br /><br />
-                  <a className="footer-link" href="tel:+3857287271">+385 728 7271</a><br />
-                  <a className="footer-link" href="mailto:dvivkov.mcc@gmail.com">dvivkov.mcc@gmail.com</a>
+                  <a className="footer-link" href="tel:+3857287271">+385 955135790</a><br />
+                  <a className="footer-link" href="mailto:s.asimovic21@gmail.com">s.asimovic21@gmail.com</a>
                 </div>
               </div>
 

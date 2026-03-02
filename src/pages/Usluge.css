@@ -176,3 +176,135 @@
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(0,0,0,0.08);
 }
+
+.kks-page { background:#fff; }
+
+.kks-hero { height: 65vh; } 
+
+.kks-hero-title{
+  margin: 0 0 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color:#fff;
+}
+
+.kks-hero-subtitle{
+  margin: 0;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.9;
+  letter-spacing: 0.6px;
+  max-width: 700px;
+  margin-left:auto;
+  margin-right:auto;
+  opacity: 0.95;
+  font-style: italic;
+  color:#fff;
+}
+
+.kks-section{ padding: 70px 16px; }
+.kks-section-tight{ padding-top: 35px; }
+
+.kks-container{
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.kks-titleRow{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  margin-bottom: 18px;
+}
+
+.kks-line{
+  height:2px;
+  width: clamp(70px, 12vw, 140px);
+  background: rgba(142,107,189,0.7);
+  flex:0 0 auto;
+}
+
+.kks-title{
+  margin:0;
+  font-size: 15px;
+  font-weight:700;
+  font-style: italic;
+  color:#333;
+  text-align:center;
+}
+
+.kks-text{
+  margin: 0 auto;
+  max-width: 760px;
+  font-size: 13px;
+  line-height: 1.9;
+  color:#666;
+  text-align:center;
+}
+
+.kks-items{
+  max-width: 760px;
+  margin: 0 auto;
+  display:grid;
+  gap: 18px;
+}
+
+.kks-item h3{
+  margin:0 0 6px;
+  font-size: 13px;
+  font-weight:700;
+  color:#333;
+  text-align:center;
+}
+
+.kks-item p{
+  margin:0;
+  font-size:13px;
+  line-height:1.9;
+  color:#666;
+  text-align:center;
+}
+
+
+.kks-processGrid{
+  display:grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items:start;
+}
+
+.kks-processBadge{
+  background: linear-gradient(135deg, #8e6bbd, #b07ad9);
+  color:#fff;
+  padding: 26px 28px;
+  font-weight:700;
+  font-style: italic;
+  letter-spacing: 1px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.kks-processContent{ padding-top: 6px; }
+
+.kks-processTitle{
+  margin: 0 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color:#333;
+  text-transform: uppercase;
+}
+
+.kks-processList{
+  margin: 0;
+  padding-left: 16px;
+  color:#666;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+@media (max-width: 900px){
+  .kks-processGrid{ grid-template-columns: 1fr; }
+}
+
+

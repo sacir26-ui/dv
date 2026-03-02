@@ -7,6 +7,8 @@ import VideoFooter from    "./components/VideoFooter";
 import ScrollToTop from    "./components/ScrollToTop";
 import Home from           "./pages/Home";
 import Onama from          "./pages/Onama";
+import KreativaSadrzaj from "./pages/KreativaSadrzaj";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <Navbar />
 
       <Routes>
+        <Route path="/usluge/kreativni-koncepti" element={<KreativaSadrzaj />} />
         <Route path="/usluge" element={<Usluge />} />
         <Route path="/usluge/branding" element={<Branding />} />  
         <Route path="/" element={<Home />} />

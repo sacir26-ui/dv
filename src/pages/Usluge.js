@@ -42,11 +42,14 @@ export default function Usluge() {
             </div>
             </Link>
 
+          <Link to="/usluge/kreativni-koncepti" className="usluge-card-link">
             <div className="usluge-card">
               <h3>Kreativni koncepti i sadržaj</h3>
               <p>Ideje, storytelling i sadržaj koji je dosljedan brendu.</p>
             </div>
+          </Link>
 
+          
             <div className="usluge-card">
               <h3>Društvene mreže i edukacija</h3>
               <p>Strategija objava, struktura i edukacija tima.</p>
@@ -66,7 +69,24 @@ export default function Usluge() {
               <h3>Tehnički SEO & održivost</h3>
               <p>Struktura, brzina, SEO osnova i dugoročna održivost.</p>
             </div>
-          </div>
+          
+
+              <div className="usluge-card">
+        <h3>UX/UI dizajn i struktura sadržaja</h3>
+        <p>Dizajn korisničkog iskustva i jasna struktura sadržaja kako bi web bio jednostavan za korištenje i logičan za navigaciju.</p>
+      </div>
+
+      <div className="usluge-card">
+        <h3>Landing stranice i konverzije</h3>
+        <p>Izrada landing stranica fokusiranih na cilj — kontakt, upit ili kupnju — uz optimizaciju sadržaja i elemenata za veću konverziju.</p>
+      </div>
+
+      <div className="usluge-card">
+        <h3>Copywriting i storytelling</h3>
+        <p>Tekstovi koji jasno komuniciraju vrijednost brenda, grade povjerenje i vode korisnika kroz sadržaj na prirodan način.</p>
+      </div>
+    </div>
+
 
           <div className="usluge-cta">
             <a className="usluge-ctaBtn" href="#kontakt">

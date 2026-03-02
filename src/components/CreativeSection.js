@@ -34,7 +34,12 @@ export default function CreativeSection() {
                   <span className="service-plus">+</span>
                 </NavLink>
               </li>
-              <li>KREATIVNI KONCEPTI I SADRŽAJ <span>+</span></li>
+              <li>
+                <NavLink to="/usluge/kreativni-koncepti" className="service-row-link">
+                  <span className="service-text">KREATIVNI KONCEPTI I SADRŽAJ</span>
+                  <span className="service-plus">+</span>
+                </NavLink>
+              </li>
               <li>DRUŠTVENE MREŽE I EDUKACIJA <span>+</span></li>
               <li>FOTOGRAFIJA & VIDEO <span>+</span></li>
               <li>COPYWRITING I STORYTELLING <span>+</span></li>
