@@ -1,6 +1,19 @@
-/* =========================
-   HERO (global)
-========================= */
+.hero-content {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-content h1 {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.hero-content p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.9;
+}
 .hero {
   position: relative;
   height: 80vh;
