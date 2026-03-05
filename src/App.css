@@ -192,31 +192,35 @@
   max-width: 570px;
 }
 
-.line {
+.creative-section .line {
   width: 80px;
   height: 2px;
   background: #8e6bbd;
   margin: 22px 0;
+  display: block;
 }
 
-.service-list {
+.creative-section .service-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.service-list li {
+.creative-section .service-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.12);
+  padding: 14px 0; /* malo veći razmak (kao prije) */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   letter-spacing: 0.6px;
   font-size: 15px;
   color: #444;
 }
 
-/* link cijelog reda (ako koristiš) */
+.creative-section .service-list li:last-child {
+  border-bottom: none;
+}
+
 .service-row-link {
   display: flex;
   justify-content: space-between;
@@ -230,7 +234,7 @@
   color: inherit;
 }
 
-/* tekst i plus */
+
 .service-list .service-text {
   color: #444;
   font-weight: 400;
@@ -245,7 +249,7 @@
   line-height: 1;
 }
 
-/* ako koristiš link samo na plus */
+
 .service-plus-link {
   text-decoration: none;
   color: #8e6bbd;
@@ -289,9 +293,7 @@
   }
 }
 
-/* =========================
-   WEB SECTION
-========================= */
+
 .web-section {
   padding: 70px 0 80px;
   background: #fff;
@@ -506,15 +508,10 @@
   }
 }
 
-/* =========================
-   BRANDING PAGE (mockup)
-========================= */
 .branding-hero {
   height: 65vh;
   
- 
 }
-
 .branding-hero .branding-hero-title {
   color: #fff;
   margin: 0 0 18px;
@@ -619,10 +616,23 @@
   padding-top: 30px;
 }
 
-/* =========================
-   BRANDING PROCESS BLOCK
-   (KAKO RADIMO NA BRANDING PROJEKTIMA)
-========================= */
+.hero-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #222;
+  border-radius: 999px;
+  font-size: 13px;
+  padding: 14px 34px;
+  text-decoration: none;
+  margin-top: 30px;
+  transition: transform 0.2s ease;
+}
+
+.hero-btn:hover{
+  transform: translateY(-3px);
+}
 
 .branding-process {
   padding: 70px 0 40px;
@@ -642,7 +652,7 @@
   align-items: start;
 }
 
-/* lijevo */
+
 .branding-process-box {
   background: linear-gradient(135deg, #8e6bbd, #b07ad9);
   color: #fff;
@@ -668,7 +678,7 @@
   color: #666;
 }
 
-/* desno */
+
 .branding-process-kicker {
   font-size: 11px;
   letter-spacing: 1px;
@@ -711,7 +721,7 @@
   transform: translateY(-2px);
 }
 
-/* bottom quote */
+
 .branding-process-bottom {
   margin-top: 36px;
   text-align: center;
@@ -733,7 +743,6 @@
   line-height: 1.8;
 }
 
-/* responsive */
 @media (max-width: 900px) {
   .branding-process-grid {
     grid-template-columns: 1fr;
@@ -743,4 +752,82 @@
   .branding-process-desc {
     max-width: 100%;
   }
+}
+
+.creative-section .line{
+  width: 80px;
+  height: 2px;
+  background: #8e6bbd;
+  margin: 22px 0;
+  display: block;
+}
+
+
+.creative-section .service-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.creative-section .service-list li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+.creative-section .service-row-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  padding: 14px 0; 
+  border-bottom: 1px solid rgba(0,0,0,0.12); 
+}
+
+
+.creative-section .service-list li:last-child .service-row-link{
+  border-bottom: none;
+}
+
+
+.creative-section .service-list > :last-child .service-row-link,
+.creative-section .service-list > a:last-child,
+.creative-section .service-list > div:last-child{
+  border-bottom: none;
+}
+
+
+
+.web-section .service-row-link{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  text-decoration:none;
+  color:inherit;
+
+  padding: 10px 0; 
+}
+
+.web-section .service-row-link:hover{
+  color:inherit;
+}
+
+
+.web-section .service-text{
+  font-size:15px;
+  letter-spacing:0.8px;
+  color:#444;
+  font-weight:400;
+}
+
+
+.web-section .service-plus{
+  color:#8e6bbd;
+  font-weight:700;
+  font-size:18px;
+  line-height:1;
 }

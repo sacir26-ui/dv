@@ -5,7 +5,7 @@ export default function KreativaSadrzaj() {
     <main className="kks-page">
     
      <section className="hero kks-hero">
-  <video className="hero-video" src="/DV-materijali/video-za-hero.mp4" autoPlay muted loop playsInline />
+  <video className="hero-video" src="DV-materijali/video-za-hero.mp4" autoPlay muted loop playsInline />
   <div className="hero-content">
     <h1 className="kks-hero-title">Kreativni koncepti i sadržaj</h1>
     <p className="kks-hero-subtitle">Sadržaj koji ima smisla, gradi povjerenje i dosljedno prenosi vrijednost brenda.</p>
@@ -13,7 +13,7 @@ export default function KreativaSadrzaj() {
   </div>
 </section>
 
-      {/* 1) Intro blok */}
+      
       <section className="kks-section kks-intro">
         <div className="kks-container">
           <div className="kks-center-block">
@@ -38,7 +38,7 @@ export default function KreativaSadrzaj() {
         </div>
       </section>
 
-      {/* 2) Što podrazumijevamo + lista (4 stavke) */}
+      
       <section className="kks-section kks-what">
         <div className="kks-container">
           <div className="kks-center-block">
@@ -89,11 +89,11 @@ export default function KreativaSadrzaj() {
         </div>
       </section>
 
-      {/* 3) Kako radimo (badge + proces + CTA) */}
+      
       <section className="kks-section kks-process">
         <div className="kks-container">
           <div className="kks-process-grid">
-            {/* lijevo */}
+           
             <div className="kks-process-left">
               <div className="kks-badge">
                 KAKO RADIMO <br />
@@ -108,7 +108,7 @@ export default function KreativaSadrzaj() {
               </p>
             </div>
 
-            {/* desno */}
+            
             <div className="kks-process-right">
               <div className="kks-process-head">PROCES NAJČEŠĆE UKLJUČUJE:</div>
 
@@ -119,7 +119,7 @@ export default function KreativaSadrzaj() {
                 <li>Priprema za daljnju primjenu</li>
               </ul>
 
-              {/* Ako imaš svoju Kontakt stranicu/rutu, promijeni link */}
+             
               <Link className="kks-cta" to="/kontakt">
                 KONTAKTIRAJ NAS
               </Link>
@@ -128,7 +128,7 @@ export default function KreativaSadrzaj() {
         </div>
       </section>
 
-      {/* 4) Donji quote/statement s linijama */}
+      
       <section className="kks-section kks-quote">
         <div className="kks-container">
           <div className="kks-line-title kks-line-title--quote">
@@ -142,7 +142,7 @@ export default function KreativaSadrzaj() {
         </div>
       </section>
 
-      {/* FOOTER već imaš dolje */}
+      
     </main>
   );
 }

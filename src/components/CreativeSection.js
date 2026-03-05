@@ -5,7 +5,7 @@ export default function CreativeSection() {
       <div className="container">
         <div className="row align-items-center">
 
-          {/* LIJEVA STRANA */}
+          
           <div className="col-lg-6 position-relative">
             <div className="purple-box">
               <h2>KREATIVA I<br />STRATEGIJA</h2>
@@ -13,12 +13,12 @@ export default function CreativeSection() {
 
             <div className="video-box">
               <video autoPlay muted loop playsInline>
-                <source src="/DV-materijali/Real-Estate-Reel.mp4" type="video/mp4" />
+                <source src="DV-materijali/Real-Estate-Reel.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
 
-          {/* DESNA STRANA */}
+         
           <div className="col-lg-6 content-right">
             <p className="lead-text">
               Svaki kvalitetan digitalni projekt započinje jasnom strategijom i snažnim kreativnim smjerom. Kroz branding, sadržaj i vizualnu komunikaciju pomažemo brendovima da se pozicioniraju jasno,dosljedno i dugoročno održivo.
@@ -40,9 +40,20 @@ export default function CreativeSection() {
                   <span className="service-plus">+</span>
                 </NavLink>
               </li>
-              <li>DRUŠTVENE MREŽE I EDUKACIJA <span>+</span></li>
-              <li>FOTOGRAFIJA & VIDEO <span>+</span></li>
-              <li>COPYWRITING I STORYTELLING <span>+</span></li>
+              <NavLink to="/usluge/drustvene-mreze-edukacija" className="service-row-link">
+                <span className="service-text">DRUŠTVENE MREŽE I EDUKACIJA</span>
+                <span className="service-plus">+</span>
+              </NavLink>
+
+              <NavLink to="/usluge/fotografija-video" className="service-row-link">
+                  <span className="service-text">FOTOGRAFIJA & VIDEO</span>
+                  <span className="service-plus">+</span>
+                </NavLink>
+
+              <NavLink to="/usluge/copywriting-storytelling" className="service-row-link">
+                  <span className="service-text">COPYWRITING I STORYTELLING</span>
+                  <span className="service-plus">+</span>
+                </NavLink>
             </ul>
 
             <a href="#" className="cta-btn">KONTAKTIRAJ NAS</a>

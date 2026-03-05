@@ -23,7 +23,7 @@ export default function Navbar() {
 
         {/* LOGO */}
         <a className="navbar-brand position-absolute top-50 start-50 translate-middle" href="#">
-          <img src="/DV-materijali/digital_normalnno-01.png" alt="Logo" height="160" />
+          <img src="DV-materijali/digital_normalnno-01.png" alt="Logo" height="160" />
         </a>
 
         {/* DESNA STRANA */}

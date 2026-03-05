@@ -1,9 +1,10 @@
+import { NavLink } from "react-router-dom";
 export default function WebSection() {
   return (
     <section className="web-section" id="web">
       <div className="container">
 
-        {/* Gornji citat */}
+       
         <div className="web-quote">
           <span className="web-quote-line"></span>
           <p>
@@ -14,10 +15,10 @@ export default function WebSection() {
           <span className="web-quote-line"></span>
         </div>
 
-        {/* Glavni sadržaj */}
+       
         <div className="web-grid">
 
-          {/* Lijevo */}
+        
           <div className="web-left">
             <p className="web-paragraph">
               Web nije samo vizitka. To je sustav koji povezuje strategiju,
@@ -29,9 +30,18 @@ export default function WebSection() {
             <div className="web-divider"></div>
 
             <ul className="web-list">
-              <li><span>UX/UI DIZAJN I STRUKTURA SADRŽAJA</span><strong>+</strong></li>
+              <li className="web-item">
+              <NavLink to="/usluge/ux-ui-dizajn" className="service-row-link">
+                <span className="service-text">UX/UI DIZAJN I STRUKTURA SADRŽAJA</span>
+                <span className="service-plus">+</span>
+              </NavLink>
+            </li>
+
               <li><span>IZRADA WEB STRANICA</span><strong>+</strong></li>
-              <li><span>LANDING STRANICE I KONVERZIJE</span><strong>+</strong></li>
+              <NavLink to="/usluge/landing-stranice" className="service-row-link">
+              <span className="service-text">LANDING STRANICE I KONVERZIJSKI TOKOVI</span>
+              <span className="service-plus">+</span>
+            </NavLink>
               <li><span>TEHNIČKI SEO & ODRŽIVOST</span><strong>+</strong></li>
             </ul>
 
@@ -40,7 +50,7 @@ export default function WebSection() {
             </a>
           </div>
 
-          {/* DESNO */}
+          
           <div className="web-right">
             <div className="web-title-box">
               <h2>WEB I DIGITALNI<br />SUSTAVI</h2>
@@ -51,7 +61,7 @@ export default function WebSection() {
 
               <div className="web-phone">
                 <video className="web-phone-video" autoPlay muted loop playsInline preload="auto">
-                  <source src="/DV-materijali/mobitel-video.mp4" type="video/mp4" />
+                  <source src="DV-materijali/mobitel-video.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -59,7 +69,7 @@ export default function WebSection() {
 
         </div>
 
-        {/* Donji citat */}
+       
         <div className="web-bottom">
           <div className="web-bottom-line"></div>
           <p>

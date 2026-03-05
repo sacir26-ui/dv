@@ -4,7 +4,7 @@ export default function VideoFooter() {
   return (
     <section className="video-footer">
       <video className="footer-video" autoPlay loop muted playsInline>
-        <source src="/DV-materijali/video-za-hero.mp4" type="video/mp4" />
+        <source src="DV-materijali/video-za-hero.mp4" type="video/mp4" />
       </video>
 
       <div className="footer-overlay">

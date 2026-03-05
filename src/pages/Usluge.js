@@ -8,7 +8,7 @@ export default function Usluge() {
       
       <section className="usluge-hero">
         <video autoPlay muted loop playsInline preload="auto" className="usluge-hero-video">
-          <source src="/DV-materijali/video-za-hero.mp4" type="video/mp4" />
+          <source src="DV-materijali/video-za-hero.mp4" type="video/mp4" />
         </video>
 
         <div className="usluge-hero-inner">
@@ -49,16 +49,19 @@ export default function Usluge() {
             </div>
           </Link>
 
-          
-            <div className="usluge-card">
-              <h3>Društvene mreže i edukacija</h3>
-              <p>Strategija objava, struktura i edukacija tima.</p>
-            </div>
+            <Link to="/usluge/drustvene-mreze-edukacija" className="usluge-card-link">
+              <div className="usluge-card">
+                <h3>Društvene mreže i edukacija</h3>
+                <p>Strategija objava, struktura i edukacija tima.</p>
+              </div>
+            </Link> 
 
-            <div className="usluge-card">
-              <h3>Fotografija & video</h3>
-              <p>Snimanja, montaža i produkcija za kampanje i web.</p>
-            </div>
+            <Link to="/usluge/fotografija-video" className="usluge-card-link">
+              <div className="usluge-card">
+                <h3>Fotografija & video</h3>
+                <p>Snimanja, montaža i produkcija za kampanje i web.</p>
+              </div>
+            </Link>
 
             <div className="usluge-card">
               <h3>Izrada web stranica</h3>
@@ -70,21 +73,26 @@ export default function Usluge() {
               <p>Struktura, brzina, SEO osnova i dugoročna održivost.</p>
             </div>
           
-
+        <Link to="/usluge/ux-ui-dizajn" className="usluge-card-link">
               <div className="usluge-card">
         <h3>UX/UI dizajn i struktura sadržaja</h3>
         <p>Dizajn korisničkog iskustva i jasna struktura sadržaja kako bi web bio jednostavan za korištenje i logičan za navigaciju.</p>
       </div>
+      </Link>
 
+    <Link to="/usluge/landing-stranice" className="usluge-card-link">
       <div className="usluge-card">
         <h3>Landing stranice i konverzije</h3>
         <p>Izrada landing stranica fokusiranih na cilj — kontakt, upit ili kupnju — uz optimizaciju sadržaja i elemenata za veću konverziju.</p>
       </div>
+      </Link>
 
-      <div className="usluge-card">
-        <h3>Copywriting i storytelling</h3>
-        <p>Tekstovi koji jasno komuniciraju vrijednost brenda, grade povjerenje i vode korisnika kroz sadržaj na prirodan način.</p>
-      </div>
+      <Link to="/usluge/copywriting-storytelling" className="usluge-card-link">
+        <div className="usluge-card">
+          <h3>Copywriting i storytelling</h3>
+          <p>Tekstovi koji jasno komuniciraju vrijednost brenda, grade povjerenje i vode korisnika kroz sadržaj na prirodan način.</p>
+        </div>
+      </Link>
     </div>
 
 
