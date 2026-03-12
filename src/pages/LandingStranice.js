@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function LandingStranice() {
   return (
@@ -18,9 +18,7 @@ export default function LandingStranice() {
             Landing stranice i <br /> konverzijski tokovi
           </h1>
 
-          <Link to="/kontakt" className="hero-button">
-            KONTAKTIRAJ NAS
-          </Link>
+         
         </div>
       </section>
 
@@ -113,9 +111,9 @@ export default function LandingStranice() {
                 <li>Povezivanje s daljnjim koracima</li>
               </ul>
 
-              <Link to="/kontakt" className="lp-cta">
+              <NavLink className="lp-cta" to="/kontakt">
                 KONTAKTIRAJ NAS
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function UXUIDizajn() {
   return (
@@ -25,9 +25,6 @@ function UXUIDizajn() {
             korisničko iskustvo.
           </p>
 
-          <Link to="/kontakt" className="hero-button">
-            KONTAKTIRAJ NAS
-          </Link>
         </div>
       </section>
 
@@ -139,9 +136,9 @@ function UXUIDizajn() {
                 <li>Pripremu za izradu weba</li>
               </ul>
 
-              <Link to="/kontakt" className="ux-cta">
+              <NavLink to="/kontakt" className="ux-cta">
                 KONTAKTIRAJ NAS
-              </Link>
+              </NavLink>
 
             </div>
 

@@ -56,7 +56,9 @@ export default function CreativeSection() {
                 </NavLink>
             </ul>
 
-            <a href="#" className="cta-btn">KONTAKTIRAJ NAS</a>
+           <NavLink className="cta-btn" to="/kontakt">
+            KONTAKTIRAJ NAS
+          </NavLink>
           </div>
 
         </div>

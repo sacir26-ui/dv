@@ -9,7 +9,7 @@ export default function KreativaSadrzaj() {
   <div className="hero-content">
     <h1 className="kks-hero-title">Kreativni koncepti i sadržaj</h1>
     <p className="kks-hero-subtitle">Sadržaj koji ima smisla, gradi povjerenje i dosljedno prenosi vrijednost brenda.</p>
-    <a className="hero-button" href="/kontakt">KONTAKTIRAJ NAS</a>
+    
   </div>
 </section>
 

@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function DrustveneMrezeEdukacija() {
   return (
@@ -123,9 +123,9 @@ export default function DrustveneMrezeEdukacija() {
                 <li>Edukacija i podrška</li>
               </ul>
 
-              <Link className="sme-cta" to="/kontakt">
+              <NavLink className="sme-cta" to="/kontakt">
                 KONTAKTIRAJ NAS
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>

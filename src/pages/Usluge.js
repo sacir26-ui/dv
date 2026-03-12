@@ -12,14 +12,14 @@ export default function Usluge() {
         </video>
 
         <div className="usluge-hero-inner">
-          <h1 className="usluge-hero-title">USLUGE</h1>
+          <h1 className="usluge-hero-title">Usluge</h1>
           <p className="usluge-hero-subtitle">
             Strategija, kreativa i web — spojeno u sustav koji radi dugoročno.
           </p>
         </div>
       </section>
 
-      {/* CONTENT */}
+    
       <section className="usluge-section">
         <div className="usluge-container">
 
@@ -68,11 +68,13 @@ export default function Usluge() {
               <p>UX, UI i izrada stranice kao sustava (ne samo vizitke).</p>
             </div>
 
+            <Link to="/usluge/tehnicki-seo" className="usluge-card-link">
             <div className="usluge-card">
               <h3>Tehnički SEO & održivost</h3>
               <p>Struktura, brzina, SEO osnova i dugoročna održivost.</p>
             </div>
-          
+            </Link>
+
         <Link to="/usluge/ux-ui-dizajn" className="usluge-card-link">
               <div className="usluge-card">
         <h3>UX/UI dizajn i struktura sadržaja</h3>
@@ -97,9 +99,9 @@ export default function Usluge() {
 
 
           <div className="usluge-cta">
-            <a className="usluge-ctaBtn" href="#kontakt">
+            <Link className="usluge-ctaBtn" to="/kontakt">
               KONTAKTIRAJ NAS
-            </a>
+            </Link>
           </div>
 
         </div>

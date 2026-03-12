@@ -12,9 +12,7 @@ export default function Branding() {
         <div className="hero-content">
           <h1 className="branding-hero-title">Branding & vizualni identitet</h1>
 
-          <NavLink to="/kontakt" className="branding-hero-btn">
-            KONTAKTIRAJ NAS
-          </NavLink>
+          
         </div>
       </section>
 
@@ -125,9 +123,9 @@ export default function Branding() {
           <li>Identitet se priprema za korištenje u digitalnim i tiskanim materijalima</li>
         </ul>
 
-        <a className="branding-process-btn" href="/kontakt">
+        <NavLink className="branding-process-btn" to="/kontakt">
           KONTAKTIRAJ NAS
-        </a>
+        </NavLink>
       </div>
     </div>
 

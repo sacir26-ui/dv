@@ -7,12 +7,14 @@ import VideoFooter from    "./components/VideoFooter";
 import ScrollToTop from    "./components/ScrollToTop";
 import Home from           "./pages/Home";
 import Onama from          "./pages/Onama";
+import Kontakt from "./pages/Kontakt";
 import KreativaSadrzaj from "./pages/KreativaSadrzaj";
 import CopywritingStorytelling from "./pages/CopywritingStorytelling";
 import DrustveneMrezeEdukacija from "./pages/DrustveneMrezeEdukacija";
 import FotografijaVideo from "./pages/FotografijaVideo";
 import UXUIDizajn from "./pages/UXUIDizajn";
 import LandingStranice from "./pages/LandingStranice";
+import TehnickiSEO from "./pages/TehnickiSEO";
 
 
 function App() {
@@ -27,11 +29,13 @@ function App() {
         <Route path="/usluge/branding" element={<Branding />} />  
         <Route path="/" element={<Home />} />
         <Route path="/o-nama" element={<Onama />} />
+        <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/usluge/copywriting-storytelling" element={<CopywritingStorytelling />} />
         <Route path="/usluge/drustvene-mreze-edukacija" element={<DrustveneMrezeEdukacija />} />
         <Route path="/usluge/fotografija-video" element={<FotografijaVideo />} />
         <Route path="/usluge/ux-ui-dizajn" element={<UXUIDizajn />} />
         <Route path="/usluge/landing-stranice" element={<LandingStranice />} />
+        <Route path="/usluge/tehnicki-seo" element={<TehnickiSEO />} />
         
       </Routes>
 

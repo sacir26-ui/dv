@@ -5,7 +5,7 @@ import "./Onama.css";
 export default function Onama() {
   return (
     <main className="onama-page">
-      {/* HERO */}
+    
       <section className="onama-hero hero">
   <video
     autoPlay
@@ -18,14 +18,14 @@ export default function Onama() {
   </video>
 
   <div className="hero-content">
-    <h1 className="onama-hero-title">O NAMA</h1>
+    <h1 className="onama-hero-title">O nama</h1>
     <p className="onama-hero-subtitle">
       Digital Value gradimo kao partnerstvo, ne kao klasičnu agenciju.
     </p>
   </div>
 </section>
 
-      {/* UVOD */}
+      
       <section className="onama-section">
         <div className="onama-container">
           <p className="onama-intro">
@@ -38,7 +38,6 @@ export default function Onama() {
         </div>
       </section>
 
-      {/* KAKO JE NASTAO */}
       <section className="onama-section">
         <div className="onama-container">
           <div className="onama-titleRow">
@@ -59,11 +58,11 @@ export default function Onama() {
         </div>
       </section>
 
-      {/* NAŠ PRISTUP */}
+      
 <section className="onama-section">
   <div className="onama-container onama-approachGrid">
     
-    {/* lijevo: badge + video box */}
+  
     <div className="onama-approachMedia">
       <div className="onama-approachBadge">NAŠ PRISTUP</div>
 
@@ -79,7 +78,7 @@ export default function Onama() {
       </div>
     </div>
 
-    {/* desno: tekst */}
+    
     <div className="onama-approachText">
       <p className="onama-approachLead">
         Digital Value pristup temelji se na tri povezana elementa:
@@ -99,7 +98,7 @@ export default function Onama() {
   </div>
 </section>
 
-      {/* ZAŠTO DIGITAL VALUE */}
+     
       <section className="onama-section onama-why">
         <div className="onama-container">
           <div className="onama-titleRow">

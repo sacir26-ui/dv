@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 export default function Hero() {
   return (
     <section className="hero d-flex align-items-center text-white mb-5">
@@ -8,7 +9,9 @@ export default function Hero() {
       <div className="hero-content">
         <p className="h1-p">Za brendove koji razmnišljaju dugoročno</p>
         <h1>Gradimo digitalnu vrijednost kroz strategiju, kreativu i web</h1>
-        <a href="#" className="hero-button">KONTAKTIRAJ NAS</a>
+         <NavLink className="hero-button" to="/kontakt">
+          KONTAKTIRAJ NAS
+        </NavLink>
       </div>
     </section>
   );

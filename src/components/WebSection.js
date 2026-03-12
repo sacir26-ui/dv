@@ -42,12 +42,16 @@ export default function WebSection() {
               <span className="service-text">LANDING STRANICE I KONVERZIJSKI TOKOVI</span>
               <span className="service-plus">+</span>
             </NavLink>
-              <li><span>TEHNIČKI SEO & ODRŽIVOST</span><strong>+</strong></li>
+
+              <NavLink to="/usluge/tehnicki-seo" className="service-row-link">
+                <span className="service-text">TEHNIČKA SEO OPTIMIZACIJA</span>
+                <span className="service-plus">+</span>
+              </NavLink>
             </ul>
 
-            <a className="web-btn" href="#kontakt">
+            <NavLink className="web-btn" to="/kontakt">
               JE LI TVOJ PROJEKT SPREMAN ZA WEB?
-            </a>
+            </NavLink>
           </div>
 
           

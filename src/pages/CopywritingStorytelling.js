@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+
+import { NavLink } from "react-router-dom";
 
 export default function CopywritingStorytelling() {
   return (
     <main className="cws-page">
-      {/* HERO – ISTI PATTERN KAO DRUGDJE */}
+    
       <section className="hero cws-hero">
         <video
           className="hero-video"
@@ -17,7 +17,7 @@ export default function CopywritingStorytelling() {
         <div className="hero-content">
           <h1>Copywriting &amp; storytelling</h1>
           
-          {/* ako ti je na drugim heroima button <button> onda stavi isto */}
+         
          
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function CopywritingStorytelling() {
         </div>
       </section>
 
-      {/* 2) Što podrazumijevamo + lista */}
+   
       <section className="cws-section cws-what">
         <div className="cws-container">
           <div className="cws-center-block">
@@ -97,7 +97,7 @@ export default function CopywritingStorytelling() {
         </div>
       </section>
 
-      {/* 3) Kako radimo (badge + proces + CTA) */}
+      
       <section className="cws-section cws-process">
         <div className="cws-container">
           <div className="cws-process-grid">
@@ -124,15 +124,15 @@ export default function CopywritingStorytelling() {
                 <li>Priprema za primjenu</li>
               </ul>
 
-              <Link className="cws-cta" to="/kontakt">
+              <NavLink className="cws-cta" to="/kontakt">
                 KONTAKTIRAJ NAS
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4) Donji statement */}
+     
       <section className="cws-section cws-quote">
         <div className="cws-container">
           <div className="cws-line-title cws-line-title--quote">

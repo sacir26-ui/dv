@@ -31,9 +31,11 @@ export default function Navbar() {
           <li className="nav-item">
             <a className="nav-link" href="#">PROJEKTI</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">KONTAKT</a>
-          </li>
+         <li className="nav-item">
+          <NavLink className="nav-link" to="/kontakt">
+            KONTAKT
+          </NavLink>
+        </li>
           <li className="nav-item">
             <a className="nav-link" href="#">BLOG</a>
           </li>
@@ -52,11 +54,34 @@ export default function Navbar() {
 
       <div className="collapse d-lg-none bg-dark w-100" id="mobileMenu">
         <ul className="navbar-nav d-flex ms-auto flex-column text-center p-3 gap-3">
-          <li className="nav-item"><a className="nav-link text-white" href="#">NASLOVNA</a></li>
-          <li className="nav-item"><a className="nav-link text-white" href="#">O NAMA</a></li>
-          <li className="nav-item"><a className="nav-link text-white" href="#">USLUGE</a></li>
+          <li className="nav-item">
+
+            <NavLink className="nav-link text-white" to="/naslovna">
+              NASLOVNA
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink className="nav-link text-white" to="/o-nama">
+              O NAMA
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+          <NavLink className="nav-link text-white" to="/usluge">
+            USLUGE
+          </NavLink>
+        </li>
+
           <li className="nav-item"><a className="nav-link text-white" href="#">PROJEKTI</a></li>
-          <li className="nav-item"><a className="nav-link text-white" href="#">KONTAKT</a></li>
+
+          <li className="nav-item">
+          <NavLink className="nav-link text-white" to="/kontakt">
+            KONTAKT
+          </NavLink>
+        </li>
+
+        
           <li className="nav-item"><a className="nav-link text-white" href="#">BLOG</a></li>
         </ul>
       </div>

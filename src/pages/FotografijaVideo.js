@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function FotografijaVideo() {
   return (
@@ -22,9 +22,7 @@ function FotografijaVideo() {
             Vizualni sadržaj koji prenosi poruku i jača identitet brenda.
           </p>
 
-          <Link to="/kontakt" className="hero-btn">
-            KONTAKTIRAJ NAS
-          </Link>
+          
         </div>
       </section>
 
@@ -139,9 +137,9 @@ function FotografijaVideo() {
                 <li>Pripremu za korištenje</li>
               </ul>
 
-              <Link to="/kontakt" className="fv-cta">
+              <NavLink to="/kontakt" className="fv-cta">
                 KONTAKTIRAJ NAS
-              </Link>
+              </NavLink>
 
             </div>
 
