@@ -15,6 +15,10 @@ import FotografijaVideo from "./pages/FotografijaVideo";
 import UXUIDizajn from "./pages/UXUIDizajn";
 import LandingStranice from "./pages/LandingStranice";
 import TehnickiSEO from "./pages/TehnickiSEO";
+import IzradaWebStranica from "./pages/IzradaWebStranica";
+import KakoRadimo from "./pages/KakoRadimo";
+import Projekti from "./pages/Projekti";
+import Blog from "./pages/Blog";
 
 
 function App() {
@@ -36,6 +40,10 @@ function App() {
         <Route path="/usluge/ux-ui-dizajn" element={<UXUIDizajn />} />
         <Route path="/usluge/landing-stranice" element={<LandingStranice />} />
         <Route path="/usluge/tehnicki-seo" element={<TehnickiSEO />} />
+        <Route path="/usluge/izrada-web-stranica" element={<IzradaWebStranica />} />
+        <Route path="/kako-radimo" element={<KakoRadimo />} />
+        <Route path="/projekti" element={<Projekti />} />
+        <Route path="/blog" element={<Blog />} />
         
       </Routes>
 

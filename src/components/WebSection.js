@@ -37,7 +37,11 @@ export default function WebSection() {
               </NavLink>
             </li>
 
-              <li><span>IZRADA WEB STRANICA</span><strong>+</strong></li>
+              <NavLink to="/usluge/izrada-web-stranica" className="service-row-link">
+              <span className="service-text">IZRADA WEB STRANICA</span>
+              <span className="service-plus">+</span>
+            </NavLink>
+
               <NavLink to="/usluge/landing-stranice" className="service-row-link">
               <span className="service-text">LANDING STRANICE I KONVERZIJSKI TOKOVI</span>
               <span className="service-plus">+</span>

@@ -63,10 +63,12 @@ export default function Usluge() {
               </div>
             </Link>
 
+           <Link to="/usluge/izrada-web-stranica" className="usluge-card-link">
             <div className="usluge-card">
               <h3>Izrada web stranica</h3>
-              <p>UX, UI i izrada stranice kao sustava (ne samo vizitke).</p>
+              <p>funkcionalna i dugoročno održiva web rješenja</p>
             </div>
+          </Link>
 
             <Link to="/usluge/tehnicki-seo" className="usluge-card-link">
             <div className="usluge-card">

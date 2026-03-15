@@ -1,0 +1,269 @@
+.projekti-page {
+  background: #fff;
+}
+
+.projekti-hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.projekti-hero .hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.projekti-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 25% 35%, rgba(255,255,255,0.12), transparent 55%),
+    radial-gradient(circle at 70% 70%, rgba(255,255,255,0.10), transparent 60%),
+    linear-gradient(135deg, rgba(55, 25, 110, 0.35), rgba(190, 130, 200, 0.35));
+  z-index: 1;
+}
+
+.projekti-hero-inner {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.projekti-hero-title {
+  margin: 0 0 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #fff;
+}
+
+.projekti-hero-subtitle {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.95;
+  font-style: italic;
+  color: #fff;
+}
+
+.projekti-section {
+  padding: 90px 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.projekti-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.projekti-titleRow {
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 900px) 1fr;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 52px;
+}
+
+.projekti-line {
+  height: 2px;
+  background: rgba(142, 107, 189, 0.7);
+}
+
+.projekti-title {
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.45;
+  font-style: italic;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.projekti-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.projekti-card {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.projekti-card-last {
+  grid-column: 1 / 2;
+}
+
+.projekti-card-image {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.projekti-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(40, 20, 70, 0.22) 0%,
+    rgba(40, 20, 70, 0.48) 100%
+  );
+}
+
+.projekti-card-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 22px 20px 24px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.projekti-card-title {
+  margin: 0 0 6px;
+  font-size: clamp(24px, 2vw, 30px);
+  line-height: 1.1;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.projekti-card-meta,
+.projekti-card-usluge,
+.projekti-card-opis {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.projekti-card-meta,
+.projekti-card-usluge {
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.projekti-card-opis {
+  max-width: 290px;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.projekti-closing-section {
+  padding-top: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.projekti-titleRow-bottom {
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 44px;
+}
+
+.projekti-closing-text {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+  position: relative;
+  z-index: 6;
+}
+
+.projekti-closing-text p {
+  margin: 0 0 25px;
+  color: #666;
+}
+
+.projekti-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.projekti-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 34px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #8e6bbd, #b07ad9);
+  transition: transform 0.2s ease;
+}
+
+.projekti-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .projekti-titleRow {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 38px;
+  }
+
+  .projekti-title {
+    font-size: 26px;
+  }
+
+  .projekti-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projekti-card-last {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 50%;
+  }
+
+  .projekti-card,
+  .projekti-card-image {
+    min-height: 380px;
+  }
+
+  .projekti-titleRow-bottom {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.projekti-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}

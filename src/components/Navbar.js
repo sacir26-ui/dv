@@ -29,17 +29,24 @@ export default function Navbar() {
         {/* DESNA STRANA */}
         <ul className="navbar-nav d-lg-flex d-none align-items-center nav-right custom-gap">
           <li className="nav-item">
-            <a className="nav-link" href="#">PROJEKTI</a>
+            <NavLink className="nav-link" to="/projekti">
+              PROJEKTI
+            </NavLink>
           </li>
          <li className="nav-item">
           <NavLink className="nav-link" to="/kontakt">
             KONTAKT
           </NavLink>
         </li>
+
+
           <li className="nav-item">
-            <a className="nav-link" href="#">BLOG</a>
+            <NavLink className="nav-link" to="/blog">
+              BLOG
+            </NavLink>
           </li>
         </ul>
+
 
         {/* HAMBURGER ZA MOB */}
         <button

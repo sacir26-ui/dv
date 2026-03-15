@@ -1,3 +1,5 @@
+import KakoRadimoLink from "./KakoRadimoLink";
+
 export default function Naslovna() {
   return (
     <section className="naslovna pb-5">
@@ -30,6 +32,12 @@ export default function Naslovna() {
             </div>
           </div>
         </div>
+
+     
+        <div className="kako-radimo-wrap">
+        <KakoRadimoLink />
+      </div>
+
       </div>
     </section>
   );

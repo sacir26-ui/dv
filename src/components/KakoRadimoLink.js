@@ -1,7 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 export default function KakoRadimoLink() {
   return (
-    <div className="container">
-      <a href="#kako-radimo" className="kako-radimo">Kako radimo</a>
-    </div>
+    <NavLink to="/kako-radimo" className="kako-radimo">
+      Kako radimo 
+    </NavLink>
   );
 }
