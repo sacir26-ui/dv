@@ -1,6 +1,16 @@
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 export default function Navbar() {
+  const location = useLocation();
+
+  const closeMobileMenu = () => {
+    const mobileMenu = document.getElementById("mobileMenu");
+    if (mobileMenu && mobileMenu.classList.contains("show")) {
+      mobileMenu.classList.remove("show");
+    }
+  };
+
+
   return (
     <nav className="navbar navbar-expand-md navbar-dark navbar-overlay py-5 text-white">
       <div className="container position-relative d-flex justify-content-between align-items-center">
@@ -22,9 +32,16 @@ export default function Navbar() {
         </ul>
 
         {/* LOGO */}
-        <a className="navbar-brand position-absolute top-50 start-50 translate-middle" href="#">
-          <img src={`${process.env.PUBLIC_URL}/DV-materijali/digital_normalnno-01.png`} alt="Logo" height="160" />
-        </a>
+        <NavLink
+            to="/"
+            className="navbar-brand position-absolute top-50 start-50 translate-middle"
+          >
+            <img
+              src={`${process.env.PUBLIC_URL}/DV-materijali/digital_normalnno-01.png`}
+              alt="Digital Value logo"
+              height="160"
+            />
+          </NavLink>
 
         {/* DESNA STRANA */}
         <ul className="navbar-nav d-lg-flex d-none align-items-center nav-right custom-gap">
@@ -63,33 +80,41 @@ export default function Navbar() {
         <ul className="navbar-nav d-flex ms-auto flex-column text-center p-3 gap-3">
           <li className="nav-item">
 
-            <NavLink className="nav-link text-white" to="/naslovna">
+            <NavLink className="nav-link text-white" to="/naslovna" onClick={closeMobileMenu} >
               NASLOVNA
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink className="nav-link text-white" to="/o-nama">
+            <NavLink className="nav-link text-white" to="/o-nama" onClick={closeMobileMenu} >
               O NAMA
             </NavLink>
           </li>
 
           <li className="nav-item">
-          <NavLink className="nav-link text-white" to="/usluge">
+          <NavLink className="nav-link text-white" to="/usluge" onClick={closeMobileMenu} >
             USLUGE
           </NavLink>
         </li>
 
-          <li className="nav-item"><a className="nav-link text-white" href="#">PROJEKTI</a></li>
+          <li className="nav-item">
+            <NavLink className="nav-link text-white" to="/projekti" onClick={closeMobileMenu} >
+              PROJEKTI
+            </NavLink>
+          </li>
 
           <li className="nav-item">
-          <NavLink className="nav-link text-white" to="/kontakt">
+          <NavLink className="nav-link text-white" to="/kontakt" onClick={closeMobileMenu} >
             KONTAKT
           </NavLink>
         </li>
 
         
-          <li className="nav-item"><a className="nav-link text-white" href="#">BLOG</a></li>
+          <li className="nav-item">
+            <NavLink className="nav-link text-white" to="/blog" onClick={closeMobileMenu} >
+              BLOG
+            </NavLink>
+          </li>
         </ul>
       </div>
     </nav>

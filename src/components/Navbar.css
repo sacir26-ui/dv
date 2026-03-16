@@ -17,3 +17,18 @@
   font-size: 14px;
   line-height: 21px;
 }
+.navbar-brand img {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 110px;
+  }
+}
+.navbar-brand img {
+  transition: transform 0.2s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}

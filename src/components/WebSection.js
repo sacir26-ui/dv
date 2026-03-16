@@ -67,11 +67,9 @@ export default function WebSection() {
             <div className="web-mockup">
               <img className="web-laptop" src={`${process.env.PUBLIC_URL}/DV-materijali/slika-lap-top.png`} alt="Laptop mockup" />
 
-              <div className="web-phone">
-                <video className="web-phone-video" autoPlay muted loop playsInline preload="auto">
-                  <source src={`${process.env.PUBLIC_URL}/DV-materijali/mobitel-video.mp4`} type="video/mp4" />
-                </video>
-              </div>
+              
+              
+            </div>
             </div>
           </div>
 
@@ -88,7 +86,7 @@ export default function WebSection() {
           </p>
         </div>
 
-      </div>
+      
     </section>
   );
 }

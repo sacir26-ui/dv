@@ -155,11 +155,7 @@
   }
 }
 
-@media (max-width: 768px) {
-  .footer-video {
-    display: none;
-  }
-}
+
 .footer-contact-row {
   display: flex;
   align-items: center;
