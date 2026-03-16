@@ -1578,9 +1578,7 @@
   }
 }
 
-/* =========================
-   KAKO RADIMO
-========================= */
+
 
 .kr-page {
   background: #fff;
@@ -1646,7 +1644,7 @@
   padding-bottom: 10px;
 }
 
-/* lijeva / desna kolona */
+
 .kr-left,
 .kr-right,
 .kr-left-text {
@@ -1663,7 +1661,7 @@
   line-height: 1.9;
 }
 
-/* ljubičasti box */
+
 .kr-box {
   display: inline-block;
   background: linear-gradient(135deg, #8e6bbd, #b07ad9);
@@ -1679,7 +1677,7 @@
   margin-bottom: -18px;
 }
 
-/* slike */
+
 .kr-img {
   width: 320px;
   height: auto;
@@ -1772,7 +1770,7 @@
   transform: translateY(-3px);
 }
 
-/* responsive */
+
 @media (max-width: 992px) {
   .kr-grid {
     grid-template-columns: 1fr;

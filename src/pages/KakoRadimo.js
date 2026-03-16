@@ -10,7 +10,7 @@ export default function KakoRadimo() {
           muted
           loop
           playsInline
-          src="/DV-materijali/video-za-hero.mp4"
+          src={`${process.env.PUBLIC_URL}/DV-materijali/video-za-hero.mp4`}
         />
         <div className="usluge-hero-inner">
           <h1 className="usluge-hero-title">Kako radimo</h1>
@@ -47,7 +47,7 @@ export default function KakoRadimo() {
             <div className="kr-box">NAŠ NAČIN RADA</div>
 
             <img
-              src="/DV-materijali/kakoradimo2.jpeg"
+              src={`${process.env.PUBLIC_URL}/DV-materijali/kakoradimo2.jpeg`}
               className="kr-img"
               alt="Naš način rada"
             />
@@ -106,7 +106,7 @@ export default function KakoRadimo() {
             <div className="kr-box">PROCES SURADNJE</div>
 
             <img
-              src="/DV-materijali/kakoradimo2.jpeg"
+              src={`${process.env.PUBLIC_URL}/DV-materijali/kakoradimo2.jpeg`}
               className="kr-img"
               alt="Proces suradnje"
             />

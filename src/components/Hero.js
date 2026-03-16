@@ -10,7 +10,7 @@ export default function Hero() {
       </video>
 
       <div className="hero-content">
-        <p className="h1-p">Za brendove koji razmnišljaju dugoročno</p>
+        <p className="h1-p">Za brendove koji razmišljaju dugoročno</p>
         <h1>Gradimo digitalnu vrijednost kroz strategiju, kreativu i web</h1>
          <NavLink className="hero-button" to="/kontakt">
           KONTAKTIRAJ NAS
