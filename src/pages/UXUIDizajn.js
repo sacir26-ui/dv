@@ -12,7 +12,7 @@ function UXUIDizajn() {
           muted
           loop
           playsInline
-          src="/DV-materijali/video-za-hero.mp4"
+          src={`${process.env.PUBLIC_URL}/DV-materijali/video-za-hero.mp4`}
         />
 
         <div className="usluge-hero-inner">

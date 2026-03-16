@@ -69,7 +69,7 @@ export default function Onama() {
       <div className="onama-videoBox">
         <video
           className="onama-videoMedia"
-          src="/DV-materijali/onama-vid.mp4"
+          src={`${process.env.PUBLIC_URL}/DV-materijali/onama-vid.mp4`}
           autoPlay
           muted
           loop

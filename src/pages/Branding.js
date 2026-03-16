@@ -6,7 +6,7 @@ export default function Branding() {
       
       <section className="hero branding-hero">
         <video autoPlay muted loop playsInline preload="auto" className="hero-video">
-          <source src="DV-materijali/video-za-hero.mp4" type="video/mp4" />
+          <source src={`${process.env.PUBLIC_URL}/DV-materijali/video-za-hero.mp4`} type="video/mp4" />
         </video>
 
         <div className="hero-content">

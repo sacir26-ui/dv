@@ -13,21 +13,21 @@ export default function Naslovna() {
         <div className="row">
           <div className="col-md-4">
             <div className="slicice">
-              <img src="/DV-materijali/1.png" alt="pp" />
+              <img src={`${process.env.PUBLIC_URL}/DV-materijali/1.png`} alt="pp" />
               <p>PROMIŠLJEN<br />PRISTUP</p>
             </div>
           </div>
 
           <div className="col-md-4">
             <div className="slicice">
-              <img src="/DV-materijali/2.png" alt="SNN" />
+             <img src={`${process.env.PUBLIC_URL}/DV-materijali/2.png`} alt="SNN" />
               <p>SURADNJA, NE<br />NARUDŽBA</p>
             </div>
           </div>
 
           <div className="col-md-4">
             <div className="slicice">
-              <img src="/DV-materijali/3.png" alt="KIK" />
+              <img src={`${process.env.PUBLIC_URL}/DV-materijali/3.png`} alt="KIK" />
               <p>KVALITETA<br />ISPRED KOLIČINE</p>
             </div>
           </div>

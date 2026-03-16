@@ -12,7 +12,7 @@ export default function CopywritingStorytelling() {
           muted
           loop
           playsInline
-          src="/DV-materijali/video-za-hero.mp4"
+          src={`${process.env.PUBLIC_URL}/DV-materijali/video-za-hero.mp4`}
         />
         <div className="hero-content">
           <h1>Copywriting &amp; storytelling</h1>

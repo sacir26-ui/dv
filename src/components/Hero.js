@@ -3,7 +3,10 @@ export default function Hero() {
   return (
     <section className="hero d-flex align-items-center text-white mb-5">
       <video autoPlay muted loop playsInline preload="auto" className="hero-video">
-        <source src="DV-materijali/video-za-hero.mp4" type="video/mp4" />
+        <source
+          src={`${process.env.PUBLIC_URL}/DV-materijali/video-za-hero.mp4`}
+          type="video/mp4"
+/>
       </video>
 
       <div className="hero-content">

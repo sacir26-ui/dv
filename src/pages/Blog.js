@@ -19,7 +19,10 @@ export default function Blog() {
       <section className="blog-hero">
 
         <video className="hero-video" autoPlay loop muted playsInline>
-          <source src="/DV-materijali/video-za-hero.mp4" type="video/mp4" />
+          <source
+            src={`${process.env.PUBLIC_URL}/DV-materijali/video-za-hero.mp4`}
+            type="video/mp4"
+/>
         </video>
 
         <div className="blog-hero-inner">

@@ -5,7 +5,7 @@ export default function KreativaSadrzaj() {
     <main className="kks-page">
     
      <section className="hero kks-hero">
-  <video className="hero-video" src="DV-materijali/video-za-hero.mp4" autoPlay muted loop playsInline />
+  <video className="hero-video" src={`${process.env.PUBLIC_URL}/DV-materijali/video-za-hero.mp4`} autoPlay muted loop playsInline />
   <div className="hero-content">
     <h1 className="kks-hero-title">Kreativni koncepti i sadržaj</h1>
     <p className="kks-hero-subtitle">Sadržaj koji ima smisla, gradi povjerenje i dosljedno prenosi vrijednost brenda.</p>

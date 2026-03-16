@@ -1,6 +1,6 @@
 import "./App.css";
 import Usluge from "./pages/Usluge";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Branding from       "./pages/Branding";
 import Navbar from         "./components/Navbar";
 import VideoFooter from    "./components/VideoFooter";

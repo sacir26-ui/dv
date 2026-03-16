@@ -65,11 +65,11 @@ export default function WebSection() {
             </div>
 
             <div className="web-mockup">
-              <img className="web-laptop" src="/DV-materijali/slika-lap-top.png" alt="Laptop mockup" />
+              <img className="web-laptop" src={`${process.env.PUBLIC_URL}/DV-materijali/slika-lap-top.png`} alt="Laptop mockup" />
 
               <div className="web-phone">
                 <video className="web-phone-video" autoPlay muted loop playsInline preload="auto">
-                  <source src="DV-materijali/mobitel-video.mp4" type="video/mp4" />
+                  <source src={`${process.env.PUBLIC_URL}/DV-materijali/mobitel-video.mp4`} type="video/mp4" />
                 </video>
               </div>
             </div>

@@ -5,19 +5,19 @@ export default function Projekti() {
 
   const projekti = [
     {
-      image: "/DV-materijali/wd40.png"
+      image: `${process.env.PUBLIC_URL}/DV-materijali/wd40.png`
     },
     {
-      image: "/DV-materijali/ebike.png"
+      image: `${process.env.PUBLIC_URL}/DV-materijali/ebike.png`
     },
     {
-      image: "/DV-materijali/lice-srece.png"
+      image: `${process.env.PUBLIC_URL}/DV-materijali/lice-srece.png`
     },
     {
-      image: "/DV-materijali/pali-colors.png"
+      image: `${process.env.PUBLIC_URL}/DV-materijali/pali-colors.png`
     },
     {
-      image: "/DV-materijali/walls-wit-souls.png"
+      image: `${process.env.PUBLIC_URL}/DV-materijali/walls-wit-souls.png`
     }
   ];
 
@@ -29,7 +29,10 @@ export default function Projekti() {
       <section className="projekti-hero">
 
         <video className="hero-video" autoPlay loop muted playsInline>
-          <source src="/DV-materijali/video-za-hero.mp4" type="video/mp4" />
+          <source
+          src={`${process.env.PUBLIC_URL}/DV-materijali/video-za-hero.mp4`}
+          type="video/mp4"
+/>
         </video>
 
         <div className="projekti-hero-inner">

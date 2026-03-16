@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+
 import "./Kontakt.css";
 
 export default function Kontakt() {
@@ -6,7 +6,10 @@ export default function Kontakt() {
     <div className="kontakt-page">
       <section className="kontakt-hero">
         <video className="kontakt-hero-video" autoPlay loop muted playsInline>
-          <source src="/DV-materijali/video-za-hero.mp4" type="video/mp4" />
+          <source
+          src={`${process.env.PUBLIC_URL}/DV-materijali/video-za-hero.mp4`}
+          type="video/mp4"
+/>
         </video>
 
         <div className="kontakt-hero-inner">

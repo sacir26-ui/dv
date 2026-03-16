@@ -13,7 +13,10 @@ export default function CreativeSection() {
 
             <div className="video-box">
               <video autoPlay muted loop playsInline>
-                <source src="DV-materijali/Real-Estate-Reel.mp4" type="video/mp4" />
+                <source
+              src={`${process.env.PUBLIC_URL}/DV-materijali/Real-estate-reel.mp4`}
+              type="video/mp4"
+/>
               </video>
             </div>
           </div>
