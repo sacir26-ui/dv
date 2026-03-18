@@ -1,7 +1,7 @@
 import "./Navbar.css";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink,  } from "react-router-dom";
 export default function Navbar() {
-  const location = useLocation();
+  
 
   const closeMobileMenu = () => {
     const mobileMenu = document.getElementById("mobileMenu");
@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark navbar-overlay py-5 text-white">
       <div className="container position-relative d-flex justify-content-between align-items-center">
-        {/* LIJEVA STRANA */}
+       
         <ul className="navbar-nav d-lg-flex d-none align-items-center nav-left custom-gap">
           <li className="nav-item">
             <NavLink className="nav-link" to="/">
@@ -31,7 +31,7 @@ export default function Navbar() {
         </li>
         </ul>
 
-        {/* LOGO */}
+        
         <NavLink
             to="/"
             className="navbar-brand position-absolute top-50 start-50 translate-middle"
@@ -43,7 +43,7 @@ export default function Navbar() {
             />
           </NavLink>
 
-        {/* DESNA STRANA */}
+      
         <ul className="navbar-nav d-lg-flex d-none align-items-center nav-right custom-gap">
           <li className="nav-item">
             <NavLink className="nav-link" to="/projekti">
@@ -58,8 +58,8 @@ export default function Navbar() {
 
 
           <li className="nav-item">
-            <NavLink className="nav-link" to="/blog">
-              BLOG
+            <NavLink className="nav-link" to="/FAQ">
+              FAQ
             </NavLink>
           </li>
         </ul>
@@ -111,8 +111,8 @@ export default function Navbar() {
 
         
           <li className="nav-item">
-            <NavLink className="nav-link text-white" to="/blog" onClick={closeMobileMenu} >
-              BLOG
+            <NavLink className="nav-link text-white" to="/FAQ" onClick={closeMobileMenu} >
+              FAQ
             </NavLink>
           </li>
         </ul>

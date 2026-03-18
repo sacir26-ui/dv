@@ -18,7 +18,7 @@ import TehnickiSEO from "./pages/TehnickiSEO";
 import IzradaWebStranica from "./pages/IzradaWebStranica";
 import KakoRadimo from "./pages/KakoRadimo";
 import Projekti from "./pages/Projekti";
-import Blog from "./pages/Blog";
+import FAQ from "./pages/FAQ";
 
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
         <Route path="/usluge/izrada-web-stranica" element={<IzradaWebStranica />} />
         <Route path="/kako-radimo" element={<KakoRadimo />} />
         <Route path="/projekti" element={<Projekti />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/FAQ" element={<FAQ />} />
         
       </Routes>
 
