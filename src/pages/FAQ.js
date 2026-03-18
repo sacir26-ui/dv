@@ -1,5 +1,4 @@
  import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./FAQ.css";
 
 const faqData = [
@@ -64,7 +63,7 @@ export default function FAQ() {
 
   return (
     <>
-      {/* VIDEO */}
+      
       <section className="usluge-hero faq-hero">
         <video
           autoPlay
@@ -80,7 +79,7 @@ export default function FAQ() {
         </video>
       </section>
 
-      {/* FAQ */}
+      
       <section className="faq-section">
         <div className="faq-container">
           <h2 className="faq-title">Često postavljena pitanja</h2>
