@@ -47,7 +47,7 @@ export default function KakoRadimo() {
             <div className="kr-box">NAŠ NAČIN RADA</div>
 
             <img
-              src={`${process.env.PUBLIC_URL}/DV-materijali/kakoradimo2.jpeg`}
+              src={`${process.env.PUBLIC_URL}/DV-materijali/kakoradimo1.jpeg`}
               className="kr-img"
               alt="Naš način rada"
             />

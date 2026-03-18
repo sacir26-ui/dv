@@ -138,7 +138,7 @@
 }
 
 .usluge-card::after{
-  content:"↗";
+  content: "\2192";
   position:absolute;
   right:20px;
   bottom:18px;
